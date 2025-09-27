@@ -141,28 +141,7 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-
-# REST Framework settings
 REST_FRAMEWORK = {
-'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-'PAGE_SIZE': 10,
-'DEFAULT_AUTHENTICATION_CLASSES': [
-'rest_framework.authentication.BasicAuthentication',
-'rest_framework.authentication.SessionAuthentication',
-'rest_framework.authentication.TokenAuthentication',
-],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
+    "PAGE_SIZE": 10,
 }
-
-# Debug toolbar settings
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
-
-#SECRET_KEY = os.environ.get("SECRET_KEY")
-
-#DEBUG = int(os.environ.get("DEBUG", default=0))
-
-
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'analice-bookstore-api-00ba70aa8cac.herokuapp.com', 'analice.pythonanywhere.com', 'Analice.pythonanywhere.com']
-
-STATIC_ROOT = BASE_DIR / "staticfiles"
