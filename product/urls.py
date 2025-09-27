@@ -12,3 +12,5 @@ router.register(r'category', viewsets.CategoryViewSet, basename='category')
 urlpatterns = [
     path("", include(router.urls)),
 ]
+
+# ...
