@@ -37,7 +37,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          poetry install
+          poetry install --no-root
+          poetry config virtualenvs.create false
         env:
           POETRY_VIRTUALENVS_CREATE: false
 
